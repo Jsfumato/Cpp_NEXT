@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E56BC5CF-A7A6-42C9-8A39-D96F2A50A204</string>
+	<key>IDESourceControlProjectName</key>
+	<string>[Cpp]Week1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8AB9D54B6DAE4115A64AE17EE726931CC8130647</key>
+		<string>https://github.com/Jsfumato/Cpp_NEXT.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>[Cpp]Week1.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8AB9D54B6DAE4115A64AE17EE726931CC8130647</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Jsfumato/Cpp_NEXT.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8AB9D54B6DAE4115A64AE17EE726931CC8130647</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8AB9D54B6DAE4115A64AE17EE726931CC8130647</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cpp_1</string>
+		</dict>
+	</array>
+</dict>
+</plist>
