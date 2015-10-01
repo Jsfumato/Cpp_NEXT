@@ -29,7 +29,7 @@ public:
     };
     ~Stack()
     {
-        delete list;
+        delete[] list;
     };
     
     void Push(const T &item);

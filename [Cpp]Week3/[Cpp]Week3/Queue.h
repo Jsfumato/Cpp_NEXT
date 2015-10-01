@@ -29,7 +29,7 @@ public:
     };
     Queue()
     {
-        delete list;
+        delete[] list;
     };
     
     void Enqueue(const T &item);
