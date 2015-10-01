@@ -21,21 +21,24 @@ int main(int argc, const char * argv[]) {
     intStack->Push(20);
     intStack->Push(30);
     intStack->Push(40);
+    intStack->Push(50);
+    intStack->Push(60);
     
     for (int i=0; i<5; i++) {
         cout << "[POP] " << intStack->Pop() <<endl;
     }
     
     Queue<float>* fQueue = new Queue<float>(5);
-    fQueue->Enqueue(10);
-    fQueue->Enqueue(20);
-    fQueue->Enqueue(30);
-    fQueue->Enqueue(40);
-    fQueue->Enqueue(50);
+    fQueue->Enqueue(10.1f);
+    fQueue->Enqueue(20.2f);
+    fQueue->Enqueue(30.3f);
+    fQueue->Enqueue(40.4f);
+    fQueue->Enqueue(50.5f);
+    fQueue->Enqueue(60.6f);
     
     cout << "[Dequeue] " << fQueue->Dequeue() <<endl;
     
-    fQueue->Enqueue(60);
+    fQueue->Enqueue(70.7f);
     
     for (int i=0; i<5; i++) {
         cout << "[Dequeue] " << fQueue->Dequeue() <<endl;
