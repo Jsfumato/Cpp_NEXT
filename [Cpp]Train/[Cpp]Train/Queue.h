@@ -1,8 +1,8 @@
 //
 //  Queue.h
-//  [Cpp]Week3
+//  [Cpp]Train
 //
-//  Created by Jsfumato on 2015. 10. 1..
+//  Created by Jsfumato on 2015. 10. 7..
 //  Copyright © 2015년 Jsfumato. All rights reserved.
 //
 
