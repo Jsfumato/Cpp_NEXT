@@ -25,6 +25,11 @@ public:
         cout << "[" << xPos <<", "<<yPos <<"]" << endl;
     }
     
+    ~Point()
+    {
+        cout << "파괴자!" << endl;
+    }
+    
     Point operator+(Point& p)
     {
         cout << "Point& operator+(Point& p) 호출" <<endl;
@@ -41,9 +46,9 @@ public:
     };
     
 //  후위 연산자 오버로딩
-    const Point operator++(int)
+    Point operator++(int)
     {
-        const Point p(xPos, yPos);
+        Point p(xPos, yPos);
         this->xPos += 1;
         this->yPos += 1;
         return p;
@@ -58,9 +63,9 @@ public:
     };
     
 //  후위 연산자 오버로딩
-    const Point operator--(int)
+    Point operator--(int)
     {
-        const Point p(xPos, yPos);
+        Point p(xPos, yPos);
         this->xPos -= 1;
         this->yPos -= 1;
         return p;

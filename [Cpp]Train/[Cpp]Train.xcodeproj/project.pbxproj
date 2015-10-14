@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		588263221BC5041F00987F9C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 588263211BC5041F00987F9C /* main.cpp */; };
-		5882632D1BC505AF00987F9C /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5882632C1BC505AF00987F9C /* Queue.cpp */; settings = {ASSET_TAGS = (); }; };
 		588263311BC506B100987F9C /* Passenger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 588263301BC506B100987F9C /* Passenger.cpp */; settings = {ASSET_TAGS = (); }; };
 		588263361BC50A7700987F9C /* MakePassengerList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 588263351BC50A7700987F9C /* MakePassengerList.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -29,7 +28,6 @@
 		5882631E1BC5041F00987F9C /* [Cpp]Train */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "[Cpp]Train"; sourceTree = BUILT_PRODUCTS_DIR; };
 		588263211BC5041F00987F9C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5882632B1BC505A600987F9C /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
-		5882632C1BC505AF00987F9C /* Queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		5882632F1BC5062B00987F9C /* Passenger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Passenger.h; sourceTree = "<group>"; };
 		588263301BC506B100987F9C /* Passenger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Passenger.cpp; sourceTree = "<group>"; };
 		588263341BC50A6C00987F9C /* MakePassengerList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakePassengerList.h; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				5882632B1BC505A600987F9C /* Queue.h */,
-				5882632C1BC505AF00987F9C /* Queue.cpp */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
@@ -154,7 +151,6 @@
 				588263361BC50A7700987F9C /* MakePassengerList.cpp in Sources */,
 				588263311BC506B100987F9C /* Passenger.cpp in Sources */,
 				588263221BC5041F00987F9C /* main.cpp in Sources */,
-				5882632D1BC505AF00987F9C /* Queue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +267,7 @@
 				588263271BC5041F00987F9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,14 +1,18 @@
 //
 //  Passenger.cpp
-//  [Cpp]Train
+//  [Cpp]Train_
 //
-//  Created by Jsfumato on 2015. 10. 7..
+//  Created by Jsfumato on 2015. 10. 12..
 //  Copyright © 2015년 Jsfumato. All rights reserved.
 //
 
-//#include <stdio.h>
-//#include "Passenger.h"
-#include "Util.h"
+#include <stdio.h>
+#include "Passenger.h"
+
+void Passenger::ShowInfo() const
+{
+    cout << "["<< id << "] " << name << ", " << arrivedTime << ", " << ticketingTime << ", " << stationFrom << ", " <<  stationTo <<endl;
+}
 
 void Passenger::SetTicketingStart(int time){
     ticketingStart = time;
@@ -31,14 +35,15 @@ int Passenger::GetTicketingTime() const
 
 int Passenger::GetTravelTime() const
 {
-//    return TravelTimeTable.travelTime(stationFrom, stationTo);
-    return 1;
+    TimeTable* tTable = TimeTable::GetInstance();
+    return tTable->TravelTime(stationFrom, stationTo);
 }
 
 int Passenger::GetTicketingReady() const
 {
+    extern int curTime;
     if(ticketingStart == -1)
-        return Util::curTime - arrivedTime;
+        return curTime - arrivedTime;
     return ticketingStart - arrivedTime;
 }
 
@@ -63,9 +68,17 @@ void Passenger::SetLeaveTime(int time){
     leaveTime = time;
 }
 
-string Passenger::GetResultData() const{
-    //		bw.write("아이디,이름,부스도착시간,매표소요시간,이동소요시간,출발역,도착역,매표대기시간,열차대기시간,출발시간,도착시간\n");
-//    return id+","+name+","+arrivedTime+","+ticketingTime+","+GetTravelTime()+","
-//    +stationFrom+","+stationTo+","+GetTicketingReady()+","+GetTrainReady()+","+leaveTime+","+finalTime;
-    return "asdf";
+string Passenger::GetResultData() const
+{
+    return to_string(id)+","+
+    name+","+
+    to_string(arrivedTime)+","+
+    to_string(ticketingTime)+","+
+    to_string(GetTravelTime())+","+
+    stationFrom+","+
+    stationTo+","+
+    to_string(GetTicketingReady())+","+
+    to_string(GetTrainReady())+","+
+    to_string(leaveTime)+","+
+    to_string(finalTime)+"\n";
 }

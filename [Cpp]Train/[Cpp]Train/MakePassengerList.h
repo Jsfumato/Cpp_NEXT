@@ -6,42 +6,42 @@
 //  Copyright © 2015년 Jsfumato. All rights reserved.
 //
 
+#include "Util.h"
+
 #ifndef MakePassengerList_h
 #define MakePassengerList_h
 
-#include <string>
-#include <fstream>
+
+using namespace std;
 
 class MakePassengerList
 {
 private:
-    static string fileSrc = "/Users/NEXT/Documents/Cpp_1/[Cpp]Train/[Cpp]Train/data/passengerList.csv";
+    static string fileSrc;
     
 public:
-    static ArrayList<Passenger> makeList()
+    static Queue<Passenger> makeList()
     {
-        ArrayList<Passenger> passengerList = new ArrayList<Passenger>();
+        Queue<Passenger>* passengerList = new Queue<Passenger>(50);
+
+//        ifstream inFile(fileSrc);
+//        
+//        int index = 0;
+//        char inputString[50][200];
+//        
+//        inFile.getline(inputString[index], 200);
+//        
+//        while(inFile.getline(inputString[index++], 100));
+//        
+//        for(int i = 0; i<50; i++)
+//        {
+//            cout << inputString[i] << endl;
+//        }
         
-        try {
-            File csv = new File(fileSrc);
-            BufferedReader br = new BufferedReader(new FileReader(csv));
-            String line = br.readLine();
-            
-            while ((line = br.readLine()) != null) {
-                String[] token = line.split(",");
-                passengerList.add(new Passenger(token));
-            }
-            br.close();
-        }
-        catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-        
-        return passengerList;
+        return *passengerList;
     }
-}
+};
+
+string MakePassengerList::fileSrc = "/Users/NEXT/Documents/Cpp_1/[Cpp]Train/[Cpp]Train/data/passengerList.csv";
 
 #endif /* MakePassengerList_h */

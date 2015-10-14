@@ -6,16 +6,20 @@
 //  Copyright © 2015년 Jsfumato. All rights reserved.
 //
 
-#include <iostream>
-#include "Queue.h"
-#include "Queue.cpp"
-#include "Passenger.h"
+//#include <iostream>
+//#include "Queue.h"
+//#include "Passenger.h"
+//#include "MakePassengerList.h"
+
+#include "Util.h"
 
 int main(int argc, const char * argv[]) {
     
-//		승객 리스트 생성
-    Queue<Passenger> passengerList = MakePassengerList.makeList();
+//	승객 리스트 생성
+    Queue<Passenger> passengerList = MakePassengerList::makeList();
     
+    return 0;
+
 /*
 //		승객 받을 booth 생성
     TicketBooth booth = new TicketBooth();
@@ -52,5 +56,4 @@ int main(int argc, const char * argv[]) {
         ResultList.makeResultFile("Result_2");
     }
 */
-    return 0;
 }
